@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+ 
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.container input{
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.container button {
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(35, 153, 35);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container button:hover{
+    cursor: pointer;
+    background-color: rgb(24, 96, 24);
+}
+
+.success-message {
+    width: 400px;
+    margin-top: 10px;
+    background-color: rgb(24, 96, 24);
+    padding: 10px;
+    color: white;
+    display: none;
+}
+
+.error-message{
+    background-color: rgb(229, 63, 63);
+    width: 400px;
+    padding: 5px;
+    border: none;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error{
+    color: rgb(229, 63, 63);
+    border-color: rgb(229, 63, 63);
+    outline-color: rgb(229, 63, 63);
+}

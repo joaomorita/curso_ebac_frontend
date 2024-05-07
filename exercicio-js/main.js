@@ -17,5 +17,6 @@ form.addEventListener('submit', function(e){
         message.innerHTML = errorMessage
         message.style.backgroundColor = 'red';
         message.style.display = 'block';
+        
     }
 })
