@@ -1,0 +1,32 @@
+@use 'reset';
+@use 'variaveis';
+
+header{
+    background-color: variaveis.$corSecundaria;
+    padding: 30px;
+    h1{
+        text-align: center;
+        color: variaveis.$corTexto;
+    }
+}
+
+body{
+    background-color: variaveis.$corDeFundo;
+}
+
+main{
+    max-width: 1024px;
+    padding: 15px;
+    margin: 0 auto;
+
+    h1{
+        text-align: center;
+        padding: 10px;
+        color: variaveis.$corTexto;
+    }
+
+    .fotos img{
+        max-width: 30%;
+        max-height: 200px;
+    }
+}
