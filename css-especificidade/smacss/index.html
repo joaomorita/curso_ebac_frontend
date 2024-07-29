@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smacss/base.css">
+    <link rel="stylesheet" href="smacss/layout.css">
+    <link rel="stylesheet" href="smacss/modules.css">
+    <link rel="stylesheet" href="smacss/tema-a.css">
+    <link rel="stylesheet" href="smacss/tema-b.css">
+    <title>Document</title>
+</head>
+<body class="tema-a">
+    <div id="header">
+        <div class="container">
+            <h1 class="title">Nome do site</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion">
+            <header class="accordion-header">
+                Nome do accordion
+            </header>
+            <p class="accordion-content">
+                Conteúdo
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="message message-is-error">
+                <h5 class="message-title">Atenção</h5>
+                <p class="message-content ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolores facilis explicabo, reprehenderit aut ullam, voluptatum voluptas esse, nesciunt velit perferendis placeat assumenda est vel quam! Officia, id impedit. Non.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion-header')
+        for(let i = 0; i < accordions.length; i++){
+            accordions[i].addEventListener('click', function(e){
+                //console.log(e.target.parentNode)
+                e.target.parentNode.classList.toggle('accordion-is-open')
+                // if(e.target.parentNode.classList.contains('accordion-is-open')){
+                //     e.target.parentNode.classList.remove('accordion-is-open');
+                // }else{
+                //     e.target.parentNode.classList.add('accordion-is-open');
+                // }
+            })
+        }
+    </script>
+</body>
+</html>

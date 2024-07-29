@@ -1,0 +1,43 @@
+.title{
+    font-size: 48px;
+}
+
+
+.message{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.message-title{
+    font-size: 18px;
+}
+
+.message-content{
+    font-size: 14px;
+}
+
+.message-is-error{
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.212);
+}
+
+.accordion{
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.accordion-header{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.accordion-content{
+    padding: 8px;
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+.accordion-is-open .accordion-content{
+    display: block;
+}
